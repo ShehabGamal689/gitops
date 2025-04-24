@@ -15,5 +15,5 @@ spec:
               service:
                 name: node-app
                 port:
-                  number: 8080  # Update this to the correct port
+                  number: 80  # Update this to the correct port
 
