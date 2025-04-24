@@ -1,11 +1,4 @@
 resources:
-  - node-app-deployment.yml
-  - node-service.yml
-  - redis-service-yml
-  - redis-deployment.yml
-  - mysql-statefulset.yml
-  - mysql-service.yml
-  - ingress.yml
-  - mysql-pvc.yml
-  - mysql-pv.yml
+  - ../../base
+
 
