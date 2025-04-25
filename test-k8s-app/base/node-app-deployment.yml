@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: shebogimmy/node-app:latest
+          image: shebogimmy/node-app:v1.0.1
           ports:
             - containerPort: 3000
           env:
