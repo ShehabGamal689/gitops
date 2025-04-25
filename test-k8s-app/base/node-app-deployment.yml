@@ -14,15 +14,16 @@ spec:
       labels:
         app: node-app
       annotations:
-        argocd-image-updater.argoproj.io/image-list: "shebogimmy/node-app:semver:~v1"
+        # Using semver to track v1.* versions
+        argocd-image-updater.argoproj.io/image-list: "shebogimmy/node-app:semver:v1.*"
         argocd-image-updater.argoproj.io/write-back-method: git
         argocd-image-updater.argoproj.io/git-branch: main
         argocd-image-updater.argoproj.io/update-strategy: semver
-
     spec:
       containers:
         - name: node-app
-          image: shebogimmy/node-app
+          # Initially set to a fixed version like v1.0.1
+          image: shebogimmy/node-app:v1.0.1
           ports:
             - containerPort: 3000
           env:
@@ -34,5 +35,4 @@ spec:
               value: root
             - name: REDIS_HOST
               value: redis
-
 
