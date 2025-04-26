@@ -8,4 +8,7 @@ resources:
   - ingress.yml
   - mysql-pvc.yml
   - mysql-pv.yml
-
+  - cluster-issuer.yaml
+  - externalsecret.yaml
+  - secret-store.yaml
+  - service-account.yaml
