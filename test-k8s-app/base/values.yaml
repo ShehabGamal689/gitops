@@ -1,5 +1,5 @@
 app:
-  image: megs17/node_rds_redis_2:latest
+  image: shebogimmy/node_app:v1.0.1
   port: 3000
   nodePort: 30080
 
