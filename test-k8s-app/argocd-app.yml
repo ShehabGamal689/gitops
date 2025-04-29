@@ -16,7 +16,7 @@ spec:
     path: test-k8s-app/base
     helm:
       valueFiles:
-        - test-k8s-app/base/values.yaml
+        - values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     server: 'https://529E2CD8E9E607DE02DD7809586C8DE7.gr7.us-east-1.eks.amazonaws.com'
