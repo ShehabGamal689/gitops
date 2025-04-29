@@ -29,4 +29,8 @@ spec:
           envFrom:
             - secretRef:
                 name: aws-secrets-extracted   
-
+          env:
+            - name: REDIS_HOST
+              value: "redis"  # Use Redis service name as the host
+            - name: REDIS_PORT
+              value: "6379"  # Redis default port 

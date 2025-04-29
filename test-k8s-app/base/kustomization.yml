@@ -1,13 +1,14 @@
 resources:
-  - app-deployment.yaml
-  - app-service.yaml
-  - cluster-issuer.yaml
+  - node-app-deployment.yml
+  - node-service.yml
+  - redis-service.yml
+  - redis-deployment.yml
+  - mysql-statefulset.yml
+  - mysql-service.yml
+  - ingress.yml
+  - mysql-pvc.yml
+  - mysql-pv.yml
   - externalsecret.yaml
-  - mysql-stateful.yaml
-  - mysql-service.yaml
-  - node-ingress.yaml
-  - redis-deployment.yaml
-  - redis-service.yaml
   - secret-store.yaml
   - service-account.yaml
-  
+  - external-secrets-sa-token.yaml
