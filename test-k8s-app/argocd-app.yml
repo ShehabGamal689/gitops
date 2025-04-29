@@ -4,7 +4,7 @@ metadata:
   name: node-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: "megs17/node_rds_redis_2:latest"
+    argocd-image-updater.argoproj.io/image-list: "shebogimmy/node-app:latest"
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/update-strategy: tag
