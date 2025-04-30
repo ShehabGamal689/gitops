@@ -1,5 +1,5 @@
 app:
-  image: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test:latest
+  image: shebogimmy/node-app:latest
   port: 3000
   nodePort: 30080
 
