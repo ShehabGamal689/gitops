@@ -1,5 +1,5 @@
 app:
-  image: shebogimmy/node-app:v1.0.9
+  image: shebogimmy/node-app:latest
   port: 3000
   nodePort: 30080
 
