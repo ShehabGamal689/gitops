@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/ShehabGamal689/gitops'
-    targetRevision: HEAD
+    targetRevision: main
     path: test-k8s-app/base
     helm:
       valueFiles:
