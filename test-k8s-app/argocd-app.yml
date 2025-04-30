@@ -18,8 +18,8 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: 'https://kubernetes.default.svc'
-    server: 'https://529E2CD8E9E607DE02DD7809586C8DE7.gr7.us-east-1.eks.amazonaws.com'
+    #server: 'https://kubernetes.default.svc'
+    server: 'https://DCD9DD41480C47EFEC8CED176B999EE7.gr7.us-east-1.eks.amazonaws.com'
     namespace: default
   syncPolicy:
     automated:
