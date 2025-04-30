@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: shebogimmy/node-app
+    forcestring: true
+  - name: image.tag
+    value: v1.0.8
+    forcestring: true
