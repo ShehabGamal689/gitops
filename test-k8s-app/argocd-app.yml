@@ -7,9 +7,9 @@ metadata:
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/image-list: "shebogimmy/node-app"
-    argocd-image-updater.argoproj.io/shebogimmy_node-app.update-strategy: "tag"
-    argocd-image-updater.argoproj.io/shebogimmy_node-app.allow-tags: "latest"
-    argocd-image-updater.argoproj.io/shebogimmy_node-app.sort-order: "none"
+    argocd-image-updater.argoproj.io/shebogimmy_node-app.update-strategy: "semver"
+    #argocd-image-updater.argoproj.io/shebogimmy_node-app.allow-tags: "latest"
+    #argocd-image-updater.argoproj.io/shebogimmy_node-app.sort-order: "none"
 spec:
   project: default
   source:
