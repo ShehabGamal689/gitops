@@ -4,10 +4,13 @@ metadata:
   name: node-app
   namespace: argocd
   annotations:
+    argocd-image-updater.argoproj.io/image-list: "nodeapp=shebogimmy/node-app:latest"
+    argocd-image-updater.argoproj.io/nodeapp.update-strategy: "latest"
+    argocd-image-updater.argoproj.io/nodeapp.force-update: "true"
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
-    argocd-image-updater.argoproj.io/image-list: "shebogimmy/node-app:latest"
-    argocd-image-updater.argoproj.io/shebogimmy_node-app.update-strategy: "latest"
+    
+    
     #argocd-image-updater.argoproj.io/shebogimmy_node-app.allow-tags: "latest"
     #argocd-image-updater.argoproj.io/shebogimmy_node-app.sort-order: "none"
 spec:
