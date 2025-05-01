@@ -7,5 +7,5 @@ helm:
     value: "27"
     forcestring: true
   - name: app.image
-    value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test:33
+    value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test:35
     forcestring: true
