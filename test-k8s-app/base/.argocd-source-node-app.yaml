@@ -4,5 +4,5 @@ helm:
     value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test
     forcestring: true
   - name: image.tag
-    value: v1.0.12
+    value: v1.0.13
     forcestring: true
