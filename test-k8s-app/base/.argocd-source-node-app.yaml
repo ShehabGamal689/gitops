@@ -1,8 +1,8 @@
 helm:
   parameters:
   - name: image.name
-    value: shebogimmy/node-app
+    value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test
     forcestring: true
   - name: image.tag
-    value: v1.0.15
+    value: v1.0.11
     forcestring: true
