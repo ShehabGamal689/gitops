@@ -1,5 +1,5 @@
 helm:
   parameters:
   - name: app.image
-    value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test:40.23
+    value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test:40.24
     forcestring: true
