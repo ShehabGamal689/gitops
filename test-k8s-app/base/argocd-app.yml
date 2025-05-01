@@ -1,0 +1,40 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: node-app
+  namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: myalias=614563210494.dkr.ecr.us-east-1.amazonaws.com/test
+    #argocd-image-updater.argoproj.io/myalias.helm.image-spec: app.image
+    argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/git-branch: main
+    argocd-image-updater.argoproj.io/myalias.update-strategy: semver
+    argocd-image-updater.argoproj.io/myalias.allow-tags: "^1\\.\\d+\\.\\d+$"
+    
+    #argocd-image-updater.argoproj.io/shebogimmy_node-app.allow-tags: "latest"
+    #argocd-image-updater.argoproj.io/shebogimmy_node-app.sort-order: "none"
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/ShehabGamal689/gitops'
+    targetRevision: main
+    path: test-k8s-app/base
+    helm:
+      #parameters:
+        #- name: image.name
+          #value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test
+          #forcestring: true
+        #- name: image.tag
+          #value: v1.0.13
+          #forcestring: true
+      valueFiles:
+        - values.yaml
+  destination:
+    #server: 'https://kubernetes.default.svc'
+    server: 'https://DCD9DD41480C47EFEC8CED176B999EE7.gr7.us-east-1.eks.amazonaws.com'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
