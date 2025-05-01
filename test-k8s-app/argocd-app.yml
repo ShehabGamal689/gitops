@@ -4,11 +4,11 @@ metadata:
   name: node-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: "614563210494.dkr.ecr.us-east-1.amazonaws.com/test"
+    argocd-image-updater.argoproj.io/image-list: myalias=614563210494.dkr.ecr.us-east-1.amazonaws.com/test
     argocd-image-updater.argoproj.io/write-back-method: git
-    argocd-image-updater.argoproj.io/git-branch: main
-    argocd-image-updater.argoproj.io/update-strategy: semver
-    argocd-image-updater.argoproj.io/allow-tags: "^1\\.\\d+\\.\\d+$"
+    #argocd-image-updater.argoproj.io/git-branch: main
+    argocd-image-updater.argoproj.io/alias.update-strategy: semver
+    #argocd-image-updater.argoproj.io/allow-tags: "^1\\.\\d+\\.\\d+$"
     
     #argocd-image-updater.argoproj.io/shebogimmy_node-app.allow-tags: "latest"
     #argocd-image-updater.argoproj.io/shebogimmy_node-app.sort-order: "none"
@@ -19,6 +19,9 @@ spec:
     targetRevision: main
     path: test-k8s-app/base
     helm:
+      parameters:
+        -name: app.image
+         value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test:v1.0.9
       valueFiles:
         - values.yaml
   destination:
