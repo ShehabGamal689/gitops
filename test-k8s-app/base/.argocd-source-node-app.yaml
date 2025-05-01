@@ -4,5 +4,5 @@ helm:
     value: 614563210494.dkr.ecr.us-east-1.amazonaws.com/test
     forcestring: true
   - name: image.tag
-    value: "14"
+    value: "20"
     forcestring: true
