@@ -29,7 +29,6 @@ This project provisions and deploys a secure, production-grade infrastructure an
 ├── external-secrets/        # ESO manifests and configuration
 ├── manifests/               # App manifests (Helm)
 ├── scripts/                 # Script to provision and deploy infrastructure
-├── Jenkinsfile              # CI pipeline logic
 ├── README.md                # Project documentation
 ```
 
