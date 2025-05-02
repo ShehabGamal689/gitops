@@ -74,7 +74,7 @@ This script will:
 
 ## 🌐 Architecture Diagram
 
-![Uploading devsecops.jpg…]()
+![devsecops](https://github.com/user-attachments/assets/b77ac261-eef2-4605-892c-7541c298199e)
 
 
 ### CI with Jenkins
