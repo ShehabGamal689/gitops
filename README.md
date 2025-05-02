@@ -119,8 +119,8 @@ This script will:
 
 ## 🌐 Ingress and TLS (Optional)
 
-* NGINX Ingress Controller or AWS ALB Ingress
-* Cert-Manager with Let's Encrypt
+* NGINX Ingress Controller
+* Cert-Manager using DNS
 * HTTPS access to NodeJS app
 
 ---
