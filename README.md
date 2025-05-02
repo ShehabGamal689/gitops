@@ -6,8 +6,8 @@ This project provisions and deploys a secure, production-grade infrastructure an
 
 * Terraform for infrastructure provisioning
 * Jenkins for Continuous Integration
-* ArgoCD + Argo Image Updater** for Continuous Deployment (GitOps)
-* External Secrets Operator** for secure secrets management
+* ArgoCD + Argo Image Updater for Continuous Deployment (GitOps)
+* External Secrets Operator for secure secrets management
 * Helm for Kubernetes resource management
 * NodeJS App deployed alongside MySQL and Redis
 
