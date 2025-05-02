@@ -103,7 +103,7 @@ This script will:
 
 * External Secrets Operator pulls secrets from AWS Secrets Manager
 * Automatically creates Kubernetes secrets
-* Used for MySQL, Redis credentials, etc.
+* Used for MySQL, Redis credentials
 
 ---
 
@@ -117,7 +117,7 @@ This script will:
 
 ---
 
-## 🌐 Ingress and TLS (Optional)
+## 🌐 Ingress and TLS 
 
 * NGINX Ingress Controller
 * Cert-Manager using DNS
