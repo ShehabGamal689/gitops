@@ -86,7 +86,6 @@ This script will:
   * Run static analysis (SonarQube, Trivy, OWASP DC)
   * Build and tag Docker image
   * Push image to Amazon ECR
-  * Optionally run Terraform for app-specific infra
 
 ### CD with ArgoCD + Argo Image Updater
 
